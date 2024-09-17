@@ -1,54 +1,54 @@
- /* Button default  */
+/* Button default  */
 
 .button {
-    display: block;
-    text-align: center;
-    font-weight: 500;
-    border-radius: 5px;
-    transition: all ease-in-out 500ms;
-  }
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all ease-in-out 500ms;
+}
 
-  .button:hover {
-    background-color: #1ea83f;
-    cursor: pointer;
-  }
+.button:hover {
+  background-color: #1ea83f;
+  cursor: pointer;
+}
 
-  /* Button variant  */
+/* Button variant  */
 
-  .medium {
-    padding: 1rem 2rem;
-  }
+.medium {
+  padding: 1rem 2rem;
+}
 
-  .small {
-    padding: 0.5rem 1rem;
-  }
+.small {
+  padding: 0.5rem 1rem;
+}
 
-  .large {
-    padding: 4rem 2rem;
-  }
+.large {
+  padding: 4rem 2rem;
+}
 
-  /* Button tone  */
+/* Button tone  */
 
-  .critical {
-    background-color: #c70a24;
-    border: none;
-    color: white;
-  }
+.critical {
+  background-color: #c70a24;
+  border: none;
+  color: white;
+}
 
-  .critical:hover {
-    background-color: #a30a24;
-    cursor: pointer;
-    color: white;
-  }
+.critical:hover {
+  background-color: #a30a24;
+  cursor: pointer;
+  color: white;
+}
 
-  .primary {
-    background-color: #8051ff;
-    border: none;
-    color: #e9e5ff;
-  }
+.primary {
+  background-color: #8051ff;
+  border: none;
+  color: #e9e5ff;
+}
 
-  .primary:hover {
-    background-color: #4112c4;
-    cursor: pointer;
-    color: #e9e5ff;
-  }
+.primary:hover {
+  background-color: #4112c4;
+  cursor: pointer;
+  color: #e9e5ff;
+}

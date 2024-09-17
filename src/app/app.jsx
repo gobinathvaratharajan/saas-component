@@ -11,26 +11,24 @@ import WelcomeRoutes from 'routes/Welcome';
 // import settings with server_url
 import Settings from 'settings.json';
 
-const routes = [
-    ...WelcomeRoutes
-]
+const routes = [...WelcomeRoutes];
 
 export default function App(props) {
-    Axios.defaults.baseURL = Settings[process.env.NODE_ENV].server_url;
+  Axios.defaults.baseURL = Settings[process.env.NODE_ENV].server_url;
 
-    return (
-        <BrowserRouter>
-            <Routes>
-                {routes.map((route, index) => {
-                    return (
-                        <Route
-                        key={ route.path }
-                        path={ route.path }
-                        element={ <View display={ route.view } title={ route.title  }/> }
-                        />
-                    )
-                })}
-            </Routes>
-        </BrowserRouter>
-    )
+  return (
+    <BrowserRouter>
+      <Routes>
+        {routes.map((route, index) => {
+          return (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={<View display={route.view} title={route.title} />}
+            />
+          );
+        })}
+      </Routes>
+    </BrowserRouter>
+  );
 }

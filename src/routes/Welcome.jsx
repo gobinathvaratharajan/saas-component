@@ -4,8 +4,8 @@ const Routes = [
   {
     path: '/',
     view: Welcome,
-    title: 'Welcome to Saas'
+    title: 'Welcome to Saas',
   },
-]
+];
 
 export default Routes;

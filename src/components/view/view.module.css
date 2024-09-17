@@ -1,11 +1,11 @@
 view {
-    padding: 1.5rem;
-    min-height: 100vh;
-    background-color: #f8fafc;
+  padding: 1.5rem;
+  min-height: 100vh;
+  background-color: #f8fafc;
 }
 
 @media (min-width: 640px) {
-    view {
-        padding-left: 6rem;
-    }
+  view {
+    padding-left: 6rem;
+  }
 }
