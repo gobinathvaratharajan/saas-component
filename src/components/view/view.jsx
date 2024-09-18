@@ -7,7 +7,7 @@
  **********/
 
 import { createContext } from 'react';
-import Style from './view.module.css';
+import { ViewStyle } from './view.style';
 
 export const ViewContext = createContext();
 
@@ -23,7 +23,7 @@ export function View(props) {
 
   return (
     <ViewContext.Provider value={context}>
-      <div className={Style.view}>{props.display && <props.display />}</div>
+      <ViewStyle>{props.display && <props.display />}</ViewStyle>
     </ViewContext.Provider>
   );
 }

@@ -10,17 +10,23 @@
  *
  **********/
 
-import Style from './button.module.css';
+import React from 'react';
+import styled from 'styled-components';
+import { Size, Tone } from './button.style.jsx'; // Import the dynamically styled components
+
+const StyledButton = styled(Button)`
+    && {
+        ${Size}
+        ${Tone}
+    }
+`;
 
 export function Button(props) {
-  // sizing the button
-  const size = props.size ? Style[`${props.size}`] : 'medium';
-  // coloring the button
-  const tone = props.tone ? Style[`${props.tone}`] : 'primary';
 
   return (
-    <button
-      className={`${Style.button} ${size} ${tone}`}
+    <StyledButton
+      size={props.size}
+      tone={props.tone}
       onClick={(e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -28,6 +34,6 @@ export function Button(props) {
       }}
     >
       {props.text}
-    </button>
+    </StyledButton>
   );
 }

@@ -1,18 +1,14 @@
-import { Button, Link, Card } from 'components/lib';
+import { Button, Link, Card, EmptyState, Dropdown } from 'components/lib';
 
 export function Welcome(props) {
+    const items = ['item1', 'item2'];
   return (
     <>
-      <Card>
-        <Link url="/">Go Home</Link>
-        <Link url="/home">Go Home</Link>
-      </Card>
-      <Button
-        text="Get The Full Boilerplate"
-        action={() => window.open('https://usegravity.app')}
-        size="small"
-        tone="primary"
-      />
+        <Button text="Click" tone="primary" size="medium" />
+        <Link title="Click 2" />
+        <Card title="card" />
+        <Dropdown items={items} title="auto" />
+        <EmptyState image="../../public/assets/no data found.jpg" title="No data found" />
     </>
   );
 }

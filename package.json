@@ -30,6 +30,7 @@
     "globals": "^15.9.0",
     "husky": "^9.1.6",
     "prettier": "^3.3.3",
+    "styled-components": "^6.1.13",
     "vite": "^5.4.1"
   },
   "husky": {
