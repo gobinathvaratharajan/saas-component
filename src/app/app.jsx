@@ -2,6 +2,9 @@ import Axios from 'axios';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+// css
+import '../css/output.css';
+
 // components
 import { View } from 'components/lib';
 

@@ -12,17 +12,16 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { Size, Tone } from './button.style.jsx'; // Import the dynamically styled components
+import { Size, Tone } from './button.style';
 
 const StyledButton = styled(Button)`
-    && {
-        ${Size}
-        ${Tone}
-    }
+  && {
+    ${Size}
+    ${Tone}
+  }
 `;
 
 export function Button(props) {
-
   return (
     <StyledButton
       size={props.size}

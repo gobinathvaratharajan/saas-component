@@ -13,12 +13,14 @@
  **********/
 
 import { NavLink } from 'react-router-dom';
-import Style from './link.module.css';
+import { LinkText } from './link.style.jsx';
 
 export function Link(props) {
   return (
-    <NavLink to={props.url} className={Style.link} title={props.title}>
-      {props.children || props.text}
-    </NavLink>
+    <LinkText>
+      <NavLink to={props.url} title={props.title}>
+        {props.children || props.text}
+      </NavLink>
+    </LinkText>
   );
 }

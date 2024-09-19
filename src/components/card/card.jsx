@@ -9,18 +9,18 @@
  *
  **********/
 
-import Style from './card.module.css';
+import { CardContainer } from './card.style.jsx';
 
 export function Card(props) {
   return (
-    <section className={Style.card}>
+    <CardContainer>
       {props.title && (
-        <header className={Style.header}>
-          <h1 className={Style.title}>{props.title}</h1>
-        </header>
+        <CardHeader>
+          <CardTitle>{props.title}</CardTitle>
+        </CardHeader>
       )}
 
       {props.children}
-    </section>
+    </CardContainer>
   );
 }

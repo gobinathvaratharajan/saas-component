@@ -11,17 +11,21 @@
  **********/
 
 import { Card } from 'components/lib';
-import Style from './emptyState.module.css';
+import { EmptyContainer } from './emptyState.style.jsx';
 
 export function EmptyState(props) {
-    return (
-        <Card>
-            <div className={Style.container}>
-                <img src={props.image} style={{ width: "100%", height: "100%" }} alt="no data found" />
-                <h2>{props.title}</h2>
-                <p>{props.text}</p>
-                {props.children}
-            </div>
-        </Card>
-    )
+  return (
+    <Card>
+      <EmptyContainer>
+        <img
+          src={props.image}
+          style={{ width: '100%', height: '100%' }}
+          alt="no data found"
+        />
+        <h2>{props.title}</h2>
+        <p>{props.text}</p>
+        {props.children}
+      </EmptyContainer>
+    </Card>
+  );
 }
