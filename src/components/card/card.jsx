@@ -9,7 +9,7 @@
  *
  **********/
 
-import { CardContainer } from './card.style.jsx';
+import { CardContainer, CardHeader, CardTitle } from './card.style';
 
 export function Card(props) {
   return (

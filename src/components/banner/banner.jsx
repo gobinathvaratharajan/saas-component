@@ -9,16 +9,13 @@
  *
  **********/
 
-import { Card } from 'components/lib';
-import { Container } from './banner.style';
+import { BannerContainer, BannerContent } from './banner.style';
 
 export function Banner(props) {
   return (
-    <Card>
-      <Container title={props.title}>
-        <BannerContent description={props.description} />
-        {props.children}
-      </Container>
-    </Card>
+    <BannerContainer title={props.title} tone={props.tone}>
+      <BannerContent description={props.description} />
+      {props.children}
+    </BannerContainer>
   );
 }

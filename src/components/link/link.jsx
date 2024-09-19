@@ -13,7 +13,7 @@
  **********/
 
 import { NavLink } from 'react-router-dom';
-import { LinkText } from './link.style.jsx';
+import { LinkText } from './link.style';
 
 export function Link(props) {
   return (

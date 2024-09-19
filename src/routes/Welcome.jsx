@@ -4,7 +4,7 @@ const Routes = [
   {
     path: '/',
     view: Welcome,
-    title: 'Welcome to Saas',
+    title: 'Dashboard',
   },
 ];
 

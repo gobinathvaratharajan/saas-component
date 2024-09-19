@@ -11,6 +11,7 @@ import {
   DropdownContainer,
   DropdownMenu,
   DropdownItem,
+  DropdownIcon,
 } from './dropdown.style';
 
 export function Dropdown(props) {
@@ -26,7 +27,10 @@ export function Dropdown(props) {
 
   return (
     <DropdownContainer>
-      <DropdownBtn onClick={toggleDropdown}>{selectedItem}</DropdownBtn>
+      <DropdownBtn onClick={toggleDropdown}>
+        {selectedItem}
+        <DropdownIcon />
+      </DropdownBtn>
       <DropdownMenu isOpen={isOpen}>
         {props.items.map((item, index) => (
           <DropdownItem key={index} onClick={() => handleItemClick(item)}>

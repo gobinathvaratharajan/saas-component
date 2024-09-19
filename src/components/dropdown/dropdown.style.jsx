@@ -3,14 +3,29 @@ import styled from 'styled-components';
 export const DropdownContainer = styled.div`
   position: relative;
   display: inline-block;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: black;
 `;
 
 export const DropdownBtn = styled.button`
-  color: white;
+  position: relative;
+  color: ${({ isOpen }) => (isOpen ? 'white' : 'black')};
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  background-color: white;
+`;
+
+export const DropdownIcon = styled.span`
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '▼';
+  color: white;
 `;
 
 export const DropdownMenu = styled.ul`
@@ -29,5 +44,6 @@ export const DropdownItem = styled.li`
   display: block;
   &:hover {
     background-color: #f1f1f1;
+    cursor: pointer;
   }
 `;

@@ -11,7 +11,7 @@
  **********/
 
 import { Card } from 'components/lib';
-import { EmptyContainer } from './emptyState.style.jsx';
+import { EmptyContainer } from './emptyState.style';
 
 export function EmptyState(props) {
   return (
